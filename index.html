@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertor</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="main-wrapper col center">
+        <div class="page-wrapper">
+            <section class="page-top">
+                <h1 class="page-title">Effects Preset Converter</h1>
+                <p class="page-description">Here you can convert your PulseEffects preset to EasyEffect presets. <br>
+                    Select your PulseEffects preset JSON file to receive a converted version of the file for EasyEffects.</p>
+            </section>
+            <section class="page-content row">
+                <div class="page-col col">
+                    <h3>PulseEffects preset Input</h3>
+                    <label class="btn upload-btn" for="file-input">
+                        Choose file
+                    </label>
+                    <input  id="file-input" type="file">
+                    <textarea spellcheck="false" class="code-preview"></textarea>
+                </div>
+                <div class="page-col col">
+                    <h3>EasyEffects preset Output</h3>
+                    <textarea spellcheck="false" class="code-preview"></textarea>
+                </div>
+            </section>
+            <section class="page-bottom">
+
+                <p>Thanks to user <a href="https://github.com/AbsurdlySuspicious" target="_blank">AbsurdlySuspicious</a>, you can run <a href="#">this bash shell script</a> with comand: <br>
+                    <code>bash convert.sh *.json</code> (requires jq and perl installed).
+                </p>
+            </section>
+        </div>
+        <footer>
+            <p>created by <a href="https://github.com/Mlocik97" target="_blank">Mlocik97</a>, styled by <a href="https://github.com/cpu1001" target="_blank">cpu1001</a></p>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
